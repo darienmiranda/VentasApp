@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:VentasApp/main.dart';
 import 'package:VentasApp/menus/menuprincipal.dart';
 import 'package:flutter/material.dart';
+import 'package:VentasApp/formularios/principalpage.dart';
  import 'package:http/http.dart' as http;
 
 class DetailProducto extends StatefulWidget {
@@ -20,7 +21,7 @@ class _DetailProductoState extends State<DetailProducto> {
       'id_producto': widget.list[widget.index]['id_producto'],
     });
   }
-
+  
   Future <List> _validarproductoparacarritonorepetido(BuildContext context) async{
     final carritonorepetido = await http.post("http://192.168.0.108/VentasApp/registrar_compra.php",body: {
       'email_id': username,

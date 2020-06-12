@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
  }
  
  class _DetalleProductoState extends State<DetalleProducto> {
-  get producto => widget.list[widget.index][''];
+  get producto => widget.list[widget.index]['idproducto'];
   get comprobar => "stiven.cor2002@gmail.com";
 
    Future<List> getperfil(producto) async{
