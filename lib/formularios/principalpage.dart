@@ -129,7 +129,7 @@ class _principalpageState extends State<principalpage> {
                         MaterialPageRoute(
                           builder: (BuildContext context) => new DetalleProducto(
                             list: _list,
-                            index: i,
+                            index: a.idproducto,
                             comprobar: a.eusuario,
                           ),
                         ),
@@ -167,7 +167,7 @@ class _principalpageState extends State<principalpage> {
                         MaterialPageRoute(
                           builder: (BuildContext context) => new DetalleProducto(
                             list: _list,
-                            index: i,
+                            index: a.idproducto,
                             comprobar: a.eusuario,
                           ),
                         ),

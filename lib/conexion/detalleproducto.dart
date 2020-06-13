@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 
  class DetalleProducto extends StatefulWidget {
    List list;
-   int index;
+   String index;
    String comprobar;
 
    DetalleProducto({this.index, this.list, this.comprobar});
@@ -16,8 +16,8 @@ import 'package:flutter/material.dart';
  }
  
  class _DetalleProductoState extends State<DetalleProducto> {
-  get producto => widget.list[widget.index]['idproducto'];
-  get comprobar => "stiven.cor2002@gmail.com";
+  get producto => "4";
+  get comprobar => "prueba@gmail.com";
 
    Future<List> getperfil(producto) async{
     final traerventa = await http.post("http://192.168.0.108/VentasApp/consultar_ventas.php", body:{
